@@ -1,5 +1,4 @@
 
-
 const LatestJobCards = ({ job, onClick }) => {
   return (
     <div
