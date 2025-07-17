@@ -19,36 +19,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
 
-
-// const corsOptions={
-//     // origin: 'http://localhost:5173',
-//        origin: 'https://jp-frontend-cx49.onrender.com/',
-//     credentials: true,
-// }
-
-// const corsOptions = {
-//     origin: ['http://localhost:5173', 'https://job-portal-hooo.vercel.app/'], 
-//     credentials: true,
-//     methods: ["GET", "POST", "PUT", "DELETE"],
-// };
-
-// app.use(cors(corsOptions));
-// const corsOptions = {
-//     origin: ['http://localhost:5173', 'https://job-portal-hooo.vercel.app'], // ❌ removed trailing slashes
-//     credentials: true,
-//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // ✅ ensure OPTIONS is included
-// };
-
-// app.use(cors(corsOptions));
-
-//   // ✅ Handle preflight requests globally
-
 const corsOptions = {
     origin: [
         'http://localhost:5173',
-        'https://job-portal-hooo.vercel.app',
-        'https://job-portal-hooo-cuwjo4o89-ashish1554s-projects.vercel.app',
-         'https://job-portal-hooo-s7su2a06t-ashish1554s-projects.vercel.app' // ✅ Correct Vercel frontend
+        'https://job-portal-dhruv.vercel.app'
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
