@@ -22,8 +22,7 @@ app.use(cookieParser())
 const corsOptions = {
     origin: [
         'http://localhost:5173',
-         'https://job-portal-hooo-s7su2a06t-ashish1554s-projects.vercel.app' ,
-          'https://job-portal-dhruv.vercel.app'
+                'https://job-portal-dhruv.vercel.app'
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
